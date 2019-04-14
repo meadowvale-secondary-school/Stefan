@@ -56,8 +56,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="slider" destination="ED3-aW-iY9" id="5FI-3S-Pbt"/>
-                        <outlet property="toggle" destination="BZX-tg-Lbs" id="nQi-Vh-TiD"/>
+                        <outlet property="slider" destination="cFd-6O-JNO" id="6nW-jm-0Dj"/>
+                        <outlet property="toggle" destination="ED3-aW-iY9" id="bxG-14-5sE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
