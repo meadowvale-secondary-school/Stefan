@@ -31,5 +31,26 @@ checkAge(userInputAge: "19")
 var prices = ["Chips": 2.99, "Donuts": 1.89, "Juice": 3.99, "Apple": 0.50, "Banana": 0.25, "Broccoli": 0.99]
 var stock = ["Chips": 4, "Donuts": 0, "Juice": 12, "Apple": 6, "Banana": 6, "Broccoli": 3]
 
+func costOfItem(chosenItem:String)->Double?{
+    let price=prices[chosenItem]
+    if price==nil{
+        print("Sorry that item does not exist")
+    }else{
+        let stockOfItem=stock[chosenItem]
+        if let unwrappedStock=stockOfItem{
+            if unwrappedStock <= 0{
+                return nil
+        }
+        }else{
+        }
+    }
+    return price
+}
 
+let chosenItem : String
+if let unwrappedcostOfItem=costOfItem(chosenItem: "Donuts"){
+    print("The price of the item is $\(unwrappedcostOfItem)")
+}else{
+    print("This product is out of stock")
+}
 //: [Previous](@previous)  |  page 3 of 6  |  [Next: App Exercise - Food Functions](@next)
