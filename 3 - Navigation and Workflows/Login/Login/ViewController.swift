@@ -39,12 +39,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func forgotUsernameAction(_ sender: UIButton) {
-        //performSegue(withIdentifier: "LoginToLanding", sender: forgotUsernameButton)
+        performSegue(withIdentifier: "LoginToLanding", sender: forgotUsernameButton)
 
     }
     
     @IBAction func forgotPasswordAction(_ sender: UIButton) {
-        //performSegue(withIdentifier: "LoginToLanding", sender: forgotPasswordButton)
+        performSegue(withIdentifier: "LoginToLanding", sender: forgotPasswordButton)
     }
     
 }

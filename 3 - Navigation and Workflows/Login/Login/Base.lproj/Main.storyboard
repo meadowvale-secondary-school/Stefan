@@ -28,7 +28,7 @@
                                 <rect key="frame" x="74" y="318" width="227" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBY-Wa-B2u">
                                 <rect key="frame" x="168" y="376" width="38" height="30"/>
@@ -42,7 +42,6 @@
                                 <state key="normal" title="Forgot Password?"/>
                                 <connections>
                                     <action selector="forgotPasswordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uO-M7-fge"/>
-                                    <segue destination="Cmp-2N-72X" kind="show" id="W7K-8M-0Aq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7R-aH-isB">
@@ -50,7 +49,6 @@
                                 <state key="normal" title="Forgot Username?"/>
                                 <connections>
                                     <action selector="forgotUsernameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xx9-xW-IWb"/>
-                                    <segue destination="Cmp-2N-72X" kind="show" id="esS-Mo-0ay"/>
                                 </connections>
                             </button>
                         </subviews>
