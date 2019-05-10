@@ -72,6 +72,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCs-TB-jeD">
+                                <rect key="frame" x="16" y="102" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QIT-9j-BAj">
+                                <rect key="frame" x="36" y="635" width="303" height="2"/>
+                            </progressView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="svK-Mo-pIb">
                                 <rect key="frame" x="16" y="243.5" width="46" height="180"/>
                                 <subviews>
@@ -93,15 +102,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCs-TB-jeD">
-                                <rect key="frame" x="16" y="102" width="343" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QIT-9j-BAj">
-                                <rect key="frame" x="36" y="635" width="303" height="2"/>
-                            </progressView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZuN-ZE-u01">
                                 <rect key="frame" x="16" y="273.5" width="343" height="120.5"/>
                                 <subviews>
@@ -215,18 +215,23 @@
                             <constraint firstItem="mCs-TB-jeD" firstAttribute="leading" secondItem="nJX-A4-AXr" secondAttribute="leading" constant="16" id="vKa-EK-zY7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nJX-A4-AXr"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="svK-Mo-pIb"/>
-                                <exclude reference="ZuN-ZE-u01"/>
-                                <exclude reference="xoC-P6-cuN"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="8Su-0T-cHe"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="5yd-Sn-4sv" id="sxX-ci-Rb4"/>
+                        <outlet property="multiLabel2" destination="Uxd-4H-Kek" id="tN0-Lr-VTr"/>
+                        <outlet property="multiLabel3" destination="vx3-sa-QgJ" id="ib1-Pt-d3N"/>
+                        <outlet property="multiLabel4" destination="35q-lY-HvR" id="bup-fd-KsS"/>
                         <outlet property="multipleStackView" destination="xoC-P6-cuN" id="RvE-Z1-UTO"/>
+                        <outlet property="questionLabel" destination="mCs-TB-jeD" id="Zi5-MK-ViO"/>
+                        <outlet property="questionProgressView" destination="QIT-9j-BAj" id="tSm-Lf-3mE"/>
+                        <outlet property="rangedLabel1" destination="7ek-Jb-eEk" id="eiQ-2r-Smo"/>
+                        <outlet property="rangedLabel2" destination="YY9-bT-YNf" id="4ds-Q8-kW5"/>
                         <outlet property="rangedStackView" destination="ZuN-ZE-u01" id="Pic-X6-W9S"/>
+                        <outlet property="singleButton1" destination="X4R-es-5Uk" id="I8T-bO-qgS"/>
+                        <outlet property="singleButton2" destination="lIn-LS-UTL" id="ocv-hZ-jOB"/>
+                        <outlet property="singleButton3" destination="jmn-9s-rvd" id="9ca-Kb-Tfl"/>
+                        <outlet property="singleButton4" destination="GYk-Sr-fki" id="0rY-AD-yda"/>
                         <outlet property="singleStackView" destination="svK-Mo-pIb" id="gJF-IX-b2M"/>
                         <segue destination="c16-bj-fJm" kind="show" identifier="ResultsSegue" id="Sna-NR-Vtc"/>
                     </connections>
