@@ -29,13 +29,13 @@ enum CarType{
     var definition: String{
         switch self {
         case.Mercedes:
-            return "Raw and powerful you are truely epic"
+            return "Raw and powerful you only work when you need to"
         case.BMW:
-            return "Light on your feet and you love to go on jogs"
+            return "Light on your feet and adaptable to any situation"
         case.AlfaRomeo:
-            return "You are a mysterious person with alot to say and show but remian humble"
+            return "You are a mysterious person with alot to say and show but remain humble"
         case.Lamborghini:
-            return "Travelling is your dream and you can't stand working"
+            return "Travelling is your dream and you can't stay still"
         }
     }
 }
