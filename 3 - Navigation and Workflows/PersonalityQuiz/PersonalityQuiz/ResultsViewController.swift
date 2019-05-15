@@ -41,7 +41,7 @@ class ResultsViewController: UIViewController {
         case .BMW:
             finalImageView.image = UIImage(named: "BMW-logo-2000-2048x2048")
         case.Lamborghini:
-            finalImageView.image = UIImage(named: "lambo")
+            finalImageView.image = UIImage(named: "Lambo")
         case.AlfaRomeo:
             finalImageView.image = UIImage(named: "AlfaRomeo")
         }
