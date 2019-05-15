@@ -48,7 +48,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.92795703210789138" blue="0.19174997515581593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="el3-qK-iky" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="268" id="2To-wm-xeF"/>
                             <constraint firstItem="2AN-Q1-kuX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="4Ua-bk-JIE"/>
@@ -215,7 +215,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.68178451709999999" green="0.98338781450000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nJX-A4-AXr" firstAttribute="trailing" secondItem="ZuN-ZE-u01" secondAttribute="trailing" constant="16" id="0ZX-39-XhN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QIT-9j-BAj" secondAttribute="trailing" constant="20" id="AyX-kt-nEM"/>
@@ -283,8 +283,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3i-jq-wAN">
+                                <rect key="frame" x="67" y="99" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.70800486799999995" blue="0.939357161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qgc-NX-Gwl" firstAttribute="trailing" secondItem="eI7-k1-O6m" secondAttribute="trailing" constant="16" id="1w0-Eg-pRR"/>
                             <constraint firstItem="qgc-NX-Gwl" firstAttribute="trailing" secondItem="MET-P9-wBq" secondAttribute="trailing" constant="16" id="4Kt-Wz-zgh"/>
@@ -303,6 +307,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="finalImageView" destination="X3i-jq-wAN" id="70g-R3-Mux"/>
                         <outlet property="resultAnswerLabel" destination="eI7-k1-O6m" id="vjc-ej-sZG"/>
                         <outlet property="resultDefinitionLabel" destination="MET-P9-wBq" id="mNa-Sm-iJs"/>
                     </connections>

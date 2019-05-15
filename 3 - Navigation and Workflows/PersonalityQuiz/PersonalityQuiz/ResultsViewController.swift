@@ -14,6 +14,7 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var resultAnswerLabel: UILabel!
     @IBOutlet weak var resultDefinitionLabel: UILabel!
+    @IBOutlet weak var finalImageView: UIImageView!
     
     // App Launches
     override func viewDidLoad() {
@@ -34,6 +35,16 @@ class ResultsViewController: UIViewController {
         let mostCommonAnswer = frequentAnswersSorted.first!.key
         resultAnswerLabel.text = ("You are a \(mostCommonAnswer)!")
         resultDefinitionLabel.text = mostCommonAnswer.definition
+        switch mostCommonAnswer{
+        case .Mercedes:
+            finalImageView.image = UIImage(named: "mercedes_logos_PNG18")
+        case .BMW:
+            finalImageView.image = UIImage(named: "BMW-logo-2000-2048x2048")
+        case.Lamborghini:
+            finalImageView.image = UIImage(named: "lambo")
+        case.AlfaRomeo:
+            finalImageView.image = UIImage(named: "AlfaRomeo")
+        }
     }
 
 }
