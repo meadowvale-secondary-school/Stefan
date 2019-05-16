@@ -31,31 +31,51 @@
                                     <segue destination="DbX-Yp-fgZ" kind="show" id="QP6-2j-azf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mercedes_logos_PNG18" translatesAutoresizingMaskIntoConstraints="NO" id="4Hk-Tj-uHk">
-                                <rect key="frame" x="271" y="20" width="88" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mercedes_logos_PNG18" translatesAutoresizingMaskIntoConstraints="NO" id="4Hk-Tj-uHk">
+                                <rect key="frame" x="271" y="20" width="88" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="ReB-nH-RJZ"/>
+                                    <constraint firstAttribute="height" constant="88" id="hAs-dr-bER"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BMW-logo-2000-2048x2048" translatesAutoresizingMaskIntoConstraints="NO" id="8OT-ca-1vZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMW-logo-2000-2048x2048" translatesAutoresizingMaskIntoConstraints="NO" id="8OT-ca-1vZ">
                                 <rect key="frame" x="25" y="33" width="68" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="QmN-UY-ENJ"/>
+                                    <constraint firstAttribute="width" constant="68" id="hzV-5D-0Qr"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlfaRomeo" translatesAutoresizingMaskIntoConstraints="NO" id="F5a-ZG-moJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlfaRomeo" translatesAutoresizingMaskIntoConstraints="NO" id="F5a-ZG-moJ">
                                 <rect key="frame" x="-38" y="518" width="194" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="3Hd-Zi-evd"/>
+                                    <constraint firstAttribute="width" constant="194" id="HhF-OD-Nzi"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lambo" translatesAutoresizingMaskIntoConstraints="NO" id="c0r-FY-45H">
-                                <rect key="frame" x="279" y="553" width="72" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lambo" translatesAutoresizingMaskIntoConstraints="NO" id="c0r-FY-45H">
+                                <rect key="frame" x="273" y="553" width="78" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="1bd-dU-fCK"/>
+                                    <constraint firstAttribute="width" constant="78" id="vsv-ml-rAx"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.92795703210789138" blue="0.19174997515581593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4Hk-Tj-uHk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="20D-je-56T"/>
                             <constraint firstItem="el3-qK-iky" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="268" id="2To-wm-xeF"/>
                             <constraint firstItem="2AN-Q1-kuX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="4Ua-bk-JIE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c0r-FY-45H" secondAttribute="trailing" constant="24" id="99e-BF-fpU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2AN-Q1-kuX" secondAttribute="trailing" constant="107" id="CLb-QC-DyK"/>
                             <constraint firstItem="el3-qK-iky" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="L9C-IX-Knp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Hk-Tj-uHk" secondAttribute="trailing" constant="16" id="YEJ-rV-icl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c0r-FY-45H" secondAttribute="bottom" constant="36" id="bMR-LG-pbh"/>
+                            <constraint firstItem="8OT-ca-1vZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="cnb-fm-bq7"/>
+                            <constraint firstItem="8OT-ca-1vZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="hZo-G2-eZY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="el3-qK-iky" secondAttribute="trailing" constant="16" id="ihq-q7-rGi"/>
+                            <constraint firstItem="F5a-ZG-moJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-38" id="j76-zy-lLV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2AN-Q1-kuX" secondAttribute="bottom" constant="319" id="kga-Kn-0N5"/>
+                            <constraint firstItem="F5a-ZG-moJ" firstAttribute="top" secondItem="2AN-Q1-kuX" secondAttribute="bottom" constant="170" id="nUM-Ug-vCs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -283,17 +303,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3i-jq-wAN">
-                                <rect key="frame" x="67" y="99" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X3i-jq-wAN">
+                                <rect key="frame" x="115" y="115" width="144" height="124"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.70800486799999995" blue="0.939357161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qgc-NX-Gwl" firstAttribute="trailing" secondItem="eI7-k1-O6m" secondAttribute="trailing" constant="16" id="1w0-Eg-pRR"/>
+                            <constraint firstItem="X3i-jq-wAN" firstAttribute="top" secondItem="qgc-NX-Gwl" secondAttribute="top" constant="51" id="3Q8-hE-iQw"/>
                             <constraint firstItem="qgc-NX-Gwl" firstAttribute="trailing" secondItem="MET-P9-wBq" secondAttribute="trailing" constant="16" id="4Kt-Wz-zgh"/>
                             <constraint firstItem="eI7-k1-O6m" firstAttribute="top" secondItem="qgc-NX-Gwl" secondAttribute="top" constant="183" id="DcY-v8-tFy"/>
+                            <constraint firstItem="X3i-jq-wAN" firstAttribute="leading" secondItem="qgc-NX-Gwl" secondAttribute="leading" constant="115" id="PDH-zV-1fm"/>
                             <constraint firstItem="eI7-k1-O6m" firstAttribute="leading" secondItem="qgc-NX-Gwl" secondAttribute="leading" constant="16" id="VFf-WU-rI7"/>
+                            <constraint firstItem="eI7-k1-O6m" firstAttribute="top" secondItem="X3i-jq-wAN" secondAttribute="bottom" constant="8" id="WZU-tu-HbZ"/>
+                            <constraint firstItem="qgc-NX-Gwl" firstAttribute="trailing" secondItem="X3i-jq-wAN" secondAttribute="trailing" constant="116" id="Zrk-zZ-egs"/>
                             <constraint firstItem="MET-P9-wBq" firstAttribute="top" secondItem="eI7-k1-O6m" secondAttribute="bottom" constant="14" id="hwy-9g-xqR"/>
                             <constraint firstItem="MET-P9-wBq" firstAttribute="leading" secondItem="qgc-NX-Gwl" secondAttribute="leading" constant="16" id="rxL-tg-KnK"/>
                         </constraints>
