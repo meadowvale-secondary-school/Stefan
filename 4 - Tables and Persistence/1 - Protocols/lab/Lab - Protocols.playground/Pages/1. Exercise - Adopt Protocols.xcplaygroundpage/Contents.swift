@@ -38,6 +38,10 @@ let sortedPeople = people.sorted(by: <)
 for people in sortedPeople{
     print(people)
 }
+if let dataForMonacco = try? JSONEncoder().encode(monacco), let stringDataMonaco = String(bytes: dataForMonacco, encoding: .utf8){
+    print (stringDataMonaco)
+}
+
 /*:
  Make the `Human` class adopt the `CustomStringConvertible`. Print both of your previously initialized `Human` objects.
  */

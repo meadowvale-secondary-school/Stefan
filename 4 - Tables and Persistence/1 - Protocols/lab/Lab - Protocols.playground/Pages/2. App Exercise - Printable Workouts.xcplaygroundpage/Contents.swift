@@ -38,6 +38,10 @@ print (running == swimming)
 let workouts = [running, swimming, jogging, climbing, skipping]
 let sortedWorkouts = workouts.sorted(by: <)
 print (sortedWorkouts)
+if let dataForRunning = try? JSONEncoder().encode(running), let stringDataRunning = String(bytes: dataForRunning, encoding: .utf8){
+    print (stringDataRunning)
+}
+
 /*:
  Make the `Workout` class above conform to the `CustomStringConvertible` protocol so that printing an instance of `Workout` will provide useful information in the console. Create an instance of `Workout`, give it an identifier of 1, and print it to the console.
  */
