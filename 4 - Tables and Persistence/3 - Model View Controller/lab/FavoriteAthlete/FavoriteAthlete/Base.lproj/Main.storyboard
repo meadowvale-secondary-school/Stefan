@@ -158,6 +158,7 @@
                         <outlet property="nameTextField" destination="U3J-R0-1jS" id="WV2-Wc-aLC"/>
                         <outlet property="teamTextField" destination="rKE-v9-NBr" id="MJO-gY-cwo"/>
                         <segue destination="wFc-3q-vwq" kind="unwind" identifier="UnwindToAthleteTable" unwindAction="prepareForUnwindWithSegue:" id="HPS-Df-mzT"/>
+                        <segue destination="wFc-3q-vwq" kind="unwind" identifier="unwindAfterSaveIdentifier" unwindAction="unwindAfterSave:" id="KHa-QS-8g8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrL-ji-oiy" sceneMemberID="firstResponder"/>

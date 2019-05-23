@@ -3,15 +3,27 @@ import UIKit
 
 class AthleteTableViewController: UITableViewController {
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        segue.destination as? AthleteFormViewController
+    @IBAction func unwindAfterSave(_ sender: UIStoryboardSegue){
+        let source: UIViewController = sender.source
+        let athleteAddedOptional = source as? AthleteFormViewController
+        guard let athleteAdded = athleteAddedOptional?.athlete else {return}
         
-        if let indexPath = tableView.indexPathForSelectedRow, segue.identifier == PropertyKeys.editAthleteSegue{
-            athleteFormViewController.athlete
+        if let indexPath = tableView.indexPathForSelectedRow{
+            athletes.remove(at: indexPath.row)
+            athletes.insert(athleteAdded, at: indexPath.row)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }else{
+            athletes.append(athleteAdded)
         }
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let athleteFormViewController = segue.destination as? AthleteFormViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow, segue.identifier == PropertyKeys.editAthleteSegue{
+            athleteFormViewController?.athlete = athletes[indexPath.row]
+        }
+    }
     
     
     struct PropertyKeys {

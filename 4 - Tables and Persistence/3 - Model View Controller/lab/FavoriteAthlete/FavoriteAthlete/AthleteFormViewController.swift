@@ -20,6 +20,8 @@ class AthleteFormViewController: UIViewController{
         guard let name = athleteNameTextField.text, let age = athleteAgeTextField.text, let league = athleteLeagueTextField.text, let team = athleteTeamTextField.text else {return}
         
         athlete = Athlete(name: name, age: age, league: league, team: team)
+        
+        performSegue(withIdentifier: "unwindAfterSaveIdentifier", sender: self)
     }
     
     var athlete: Athlete?
@@ -30,6 +32,10 @@ class AthleteFormViewController: UIViewController{
         athleteAgeTextField.text = athlete.age
         athleteLeagueTextField.text = athlete.league
         athleteTeamTextField.text = athlete.team
+    }
+    
+    override func viewDidLoad() {
+        updateView()
     }
     
 }
