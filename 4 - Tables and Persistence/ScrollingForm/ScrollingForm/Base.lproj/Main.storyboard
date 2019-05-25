@@ -316,34 +316,73 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-jX-cvR">
-                                        <rect key="frame" x="0.0" y="0.0" width="1115" height="603"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1125" height="603"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StefanLmao" translatesAutoresizingMaskIntoConstraints="NO" id="u8e-aT-bQJ">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBn-Wn-cVI">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lambo" translatesAutoresizingMaskIntoConstraints="NO" id="ekM-nJ-5xm">
-                                                <rect key="frame" x="375" y="0.0" width="500" height="603"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="COw-Xi-kol">
-                                                <rect key="frame" x="875" y="0.0" width="240" height="603"/>
-                                                <string key="image">aHR0cDovL2ltYWdlLmloZWFydC5jb20vaWhyLWluZ2VzdGlvbi1waXBlbGluZS1wcm9kdWN0aW9uLXNibWcvQTEwMzAxQTAwMDA5MzU2MjZCXzIwMTgwNTI5MTgwMzU3NzAyLzQ5NTczNS4yMDEyNi5qcGc=</string>
-                                            </imageView>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lambo" translatesAutoresizingMaskIntoConstraints="NO" id="mKB-9l-hCN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="mKB-9l-hCN" firstAttribute="leading" secondItem="QBn-Wn-cVI" secondAttribute="leading" id="Jin-Hr-43s"/>
+                                                    <constraint firstItem="mKB-9l-hCN" firstAttribute="top" secondItem="QBn-Wn-cVI" secondAttribute="top" id="dLC-8h-jCu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mKB-9l-hCN" secondAttribute="trailing" id="fxB-cT-1ws"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mKB-9l-hCN" secondAttribute="bottom" id="tw5-aP-ddJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csu-YF-qam">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="603"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2019-04-15 at 1.09.32 PM" translatesAutoresizingMaskIntoConstraints="NO" id="ADZ-qB-BLk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="ADZ-qB-BLk" firstAttribute="top" secondItem="Csu-YF-qam" secondAttribute="top" id="3mI-o9-MKg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ADZ-qB-BLk" secondAttribute="trailing" id="U0w-Ra-IdB"/>
+                                                    <constraint firstItem="ADZ-qB-BLk" firstAttribute="leading" secondItem="Csu-YF-qam" secondAttribute="leading" id="ul1-JI-Yk4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ADZ-qB-BLk" secondAttribute="bottom" id="zyZ-Te-VdL"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpt-wk-yTm">
+                                                <rect key="frame" x="750" y="0.0" width="375" height="603"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StefanLmao" translatesAutoresizingMaskIntoConstraints="NO" id="6Et-m2-rZ9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="6Et-m2-rZ9" secondAttribute="trailing" id="LcW-EK-uwD"/>
+                                                    <constraint firstItem="6Et-m2-rZ9" firstAttribute="leading" secondItem="kpt-wk-yTm" secondAttribute="leading" id="MJ2-Y3-lPN"/>
+                                                    <constraint firstItem="6Et-m2-rZ9" firstAttribute="top" secondItem="kpt-wk-yTm" secondAttribute="top" id="OTI-hn-Yxv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6Et-m2-rZ9" secondAttribute="bottom" id="z3o-n1-2qD"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="kpt-wk-yTm" firstAttribute="height" secondItem="uDQ-pd-9CK" secondAttribute="height" id="4lZ-7d-fek"/>
+                                    <constraint firstItem="Csu-YF-qam" firstAttribute="height" secondItem="uDQ-pd-9CK" secondAttribute="height" id="MTi-ww-JEW"/>
                                     <constraint firstAttribute="trailing" secondItem="tIA-jX-cvR" secondAttribute="trailing" id="Rlp-dZ-JMo"/>
                                     <constraint firstAttribute="bottom" secondItem="tIA-jX-cvR" secondAttribute="bottom" id="Vhy-Zq-7F7"/>
                                     <constraint firstItem="tIA-jX-cvR" firstAttribute="top" secondItem="uDQ-pd-9CK" secondAttribute="top" id="Xep-8L-PNV"/>
+                                    <constraint firstItem="QBn-Wn-cVI" firstAttribute="width" secondItem="uDQ-pd-9CK" secondAttribute="width" id="Z9C-Ud-XWE"/>
+                                    <constraint firstItem="Csu-YF-qam" firstAttribute="width" secondItem="uDQ-pd-9CK" secondAttribute="width" id="kbi-OB-EOP"/>
+                                    <constraint firstItem="QBn-Wn-cVI" firstAttribute="height" secondItem="uDQ-pd-9CK" secondAttribute="height" id="lOl-7x-ppL"/>
                                     <constraint firstItem="tIA-jX-cvR" firstAttribute="leading" secondItem="uDQ-pd-9CK" secondAttribute="leading" id="r7R-pw-jpn"/>
+                                    <constraint firstItem="kpt-wk-yTm" firstAttribute="width" secondItem="uDQ-pd-9CK" secondAttribute="width" id="s4k-dk-HgF"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uDQ-pd-9CK" firstAttribute="bottom" secondItem="iuh-4o-Bgu" secondAttribute="bottom" id="VrM-28-XYU"/>
-                            <constraint firstItem="u8e-aT-bQJ" firstAttribute="centerX" secondItem="iuh-4o-Bgu" secondAttribute="centerX" id="cS0-45-BW4"/>
-                            <constraint firstItem="u8e-aT-bQJ" firstAttribute="centerY" secondItem="iuh-4o-Bgu" secondAttribute="centerY" id="ggu-Hu-zGQ"/>
                             <constraint firstItem="uDQ-pd-9CK" firstAttribute="leading" secondItem="iuh-4o-Bgu" secondAttribute="leading" id="krP-h1-f7w"/>
                             <constraint firstItem="uDQ-pd-9CK" firstAttribute="trailing" secondItem="iuh-4o-Bgu" secondAttribute="trailing" id="muv-Fk-zEv"/>
                             <constraint firstItem="uDQ-pd-9CK" firstAttribute="top" secondItem="iuh-4o-Bgu" secondAttribute="top" id="tM9-q8-ym3"/>
@@ -376,10 +415,8 @@
     </scenes>
     <resources>
         <image name="Lambo" width="500" height="571"/>
+        <image name="Screen Shot 2019-04-15 at 1.09.32 PM" width="810" height="771"/>
         <image name="StefanLmao" width="220" height="292"/>
-        <image width="240" height="240">
-            <string key="name">aHR0cDovL2ltYWdlLmloZWFydC5jb20vaWhyLWluZ2VzdGlvbi1waXBlbGluZS1wcm9kdWN0aW9uLXNibWcvQTEwMzAxQTAwMDA5MzU2MjZCXzIwMTgwNTI5MTgwMzU3NzAyLzQ5NTczNS4yMDEyNi5qcGc=</string>
-        </image>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fAg-q2-d9U"/>
