@@ -130,7 +130,6 @@
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveButtonAction:" destination="8K9-2q-IXD" eventType="touchUpInside" id="iDf-rx-lP3"/>
-                                    <action selector="saveButtonTapped:" destination="8K9-2q-IXD" eventType="touchUpInside" id="hY9-aI-8LA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -149,11 +148,6 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="V1y-YK-nLQ"/>
                     <connections>
                         <outlet property="ageTextField" destination="6DH-j1-SLF" id="6Y9-re-8DD"/>
-                        <outlet property="athleteAgeTextField" destination="6DH-j1-SLF" id="rDw-8m-ciO"/>
-                        <outlet property="athleteLeagueTextField" destination="Aap-hH-FNd" id="MZ3-hR-PX4"/>
-                        <outlet property="athleteNameLabel" destination="U3J-R0-1jS" id="QpE-Ql-Db8"/>
-                        <outlet property="athleteNameTextField" destination="U3J-R0-1jS" id="tkW-JI-ie9"/>
-                        <outlet property="athleteTeamTextField" destination="rKE-v9-NBr" id="QfE-8t-C1d"/>
                         <outlet property="leagueTextField" destination="Aap-hH-FNd" id="NAj-bV-GJQ"/>
                         <outlet property="nameTextField" destination="U3J-R0-1jS" id="WV2-Wc-aLC"/>
                         <outlet property="teamTextField" destination="rKE-v9-NBr" id="MJO-gY-cwo"/>
