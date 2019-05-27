@@ -15,6 +15,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var Unit3Outlet: UIImageView!
     
+    func viewForZooming(in scrollView: UIScrollView) -> UIView?{
+        return Unit3Outlet
+    }
+    
     func updateZoomFor(size: CGSize){
         let widthScale = size.width/Unit3Outlet.bounds.width
         let heightScale = size.height/Unit3Outlet.bounds.height
@@ -25,12 +29,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         ScrollViewOutlet.delegate = self
-        
-        func viewForZooming(in ScrollViewOutlet: UIScrollView) -> UIImageView?{
-            return Unit3Outlet
-        }
-        
         updateZoomFor(size: view.bounds.size)
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
