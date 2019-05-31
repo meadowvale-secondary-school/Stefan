@@ -11,9 +11,9 @@ import Foundation
 
 class EmojiTableViewControllerV2: UITableViewController {
     
-    var organisedEmojisList: [organisedEmojis] =
-        [organisedEmojis(smileys: [Emoji(symbol: "😀", name: "Grinning Face", description: "A typical smiley face.", usage: "happiness"), Emoji(symbol: "😕", name: "Confused Face",description: "A confused, puzzled face.", usage: "unsure what to think; displeasure"), Emoji(symbol: "😍", name: "Heart Eyes", description: "A smiley face with hearts for eyes.", usage: "love of something; attractive")], animals: [Emoji(symbol: "🐢", name: "Turtle", description: "A cute turtle.", usage: "Something slow"), Emoji(symbol: "🐘", name: "Elephant", description: "A gray elephant.", usage: "good memory")], food: [Emoji(symbol: "🍝", name: "Spaghetti", description: "A plate of spaghetti.", usage: "spaghetti")], activity: [Emoji(symbol: "🎲", name: "Die", description: "A single die.", usage: "taking a risk, chance; game"), Emoji(symbol: "⛺️", name: "Tent", description: "A small tent.", usage: "camping"), Emoji(symbol: "📚", name: "Stack of Books", description: "Three colored books stacked on each other.", usage: "homework, studying")], travel: [Emoji(symbol: "💔", name: "Broken Heart", description: "A red, broken heart.", usage: "extreme sadness"), Emoji(symbol: "💤", name: "Snore", description: "Three blue \'z\'s.", usage: "tired, sleepiness")], objects: [Emoji(symbol: "BruhmanEmoji.exe", name: "Scary", description: "Hoopla", usage: "never")], symbols: [Emoji(symbol: "Gang", name: "Workship", description: "Bad guys", usage: "When you have illegal money")], flags: [Emoji(symbol: "🏁", name: "Checkered Flag", description: "A black-and-white checkered flag.", usage:
-            "completion")])]
+    var stuff: OrganisedEmojis =
+        OrganisedEmojis (emojis: [[Emoji(symbol: "😀", name: "Grinning Face", description: "A typical smiley face.", usage: "happiness"),Emoji(symbol: "😕", name: "Confused Face",description: "A confused, puzzled face.", usage: "unsure what to think; displeasure"), Emoji(symbol: "😍", name: "Heart Eyes", description: "A smiley face with hearts for eyes.", usage: "love of something; attractive")], [Emoji(symbol: "🐢", name: "Turtle", description: "A cute turtle.", usage: "Something slow"), Emoji(symbol: "🐘", name: "Elephant", description: "A gray elephant.", usage: "good memory")]])
+
     
 
     override func viewDidLoad() {
@@ -21,33 +21,22 @@ class EmojiTableViewControllerV2: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return organisedEmojisList.count
+        return stuff.emojis.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section{
         case 0:
-            return organisedEmojisList[section].smileys.count
+            print(stuff.emojis[section].count)
+            return stuff.emojis[section].count
         case 1:
-            return organisedEmojisList[section].animals.count
-        case 2:
-            return organisedEmojisList[section].food.count
-        case 3:
-            return organisedEmojisList[section].activity.count
-        case 4:
-            return organisedEmojisList[section].travel.count
-        case 5:
-            return organisedEmojisList[section].objects.count
-        case 6:
-            return organisedEmojisList[section].symbols.count
-        case 7:
-            return organisedEmojisList[section].flags.count
+            print (stuff.emojis[section].count)
+            return stuff.emojis[section].count
         default:
             return 0
         }
@@ -56,15 +45,15 @@ class EmojiTableViewControllerV2: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
-        let emojiBeingDisplayed = organisedEmojisList[indexPath.section]
+        let emojiBeingDisplayed = stuff.emojis[indexPath.section]
         
         
         ///let emoji = organisedEmojisList[indexPath.row]
         
         
         
-        cell.textLabel?.text = "\(emojiBeingDisplayed.smileys[0].symbol) - \(emojiBeingDisplayed.smileys[0].name)"
-        cell.detailTextLabel?.text = emojiBeingDisplayed.smileys[0].description
+        cell.textLabel?.text = ("\(emojiBeingDisplayed[indexPath.row].symbol)-\(emojiBeingDisplayed[indexPath.row].name)")
+        cell.detailTextLabel?.text = "\(emojiBeingDisplayed[indexPath.row].description)"
         cell.showsReorderControl = true
         return cell
     }

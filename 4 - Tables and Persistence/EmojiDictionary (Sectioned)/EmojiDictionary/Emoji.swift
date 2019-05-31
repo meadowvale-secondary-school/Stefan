@@ -22,28 +22,12 @@ class Emoji{
         self.usage = usage
     }
 }
+
+class OrganisedEmojis {
     
-class organisedEmojis {
-    var smileys: [Emoji]
-    var animals: [Emoji]
-    var food: [Emoji]
-    var activity: [Emoji]
-    var travel: [Emoji]
-    var objects: [Emoji]
-    var symbols: [Emoji]
-    var flags: [Emoji]
-        
-    init (smileys: [Emoji], animals: [Emoji], food: [Emoji], activity: [Emoji], travel: [Emoji], objects: [Emoji], symbols: [Emoji], flags: [Emoji]){
-            
-        self.smileys = smileys
-        self.animals = animals
-        self.food = food
-        self.activity = activity
-        self.travel = travel
-        self.objects = objects
-        self.symbols = symbols
-        self.flags = flags
-        
+    var emojis: [[Emoji]]
+    
+    init(emojis:[[Emoji]]){
+        self.emojis = emojis
     }
 }
-
