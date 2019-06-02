@@ -31,3 +31,8 @@ class OrganisedEmojis {
         self.emojis = emojis
     }
 }
+
+enum EmojiType: Int, CaseIterable{
+    case smileys = 0
+    case animals = 1
+}
