@@ -18,9 +18,7 @@ class EmojiTableViewControllerV2: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
+    
     }
 
     // MARK: - Table view data source
@@ -61,15 +59,25 @@ class EmojiTableViewControllerV2: UITableViewController {
         tableView.setEditing(!tableViewEdittingMode, animated: true)
     }
     
+    
+    override func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath:IndexPath)->IndexPath{
+        if proposedDestinationIndexPath.section != sourceIndexPath.section{
+            return sourceIndexPath
+        }else{
+            return proposedDestinationIndexPath
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath){
-        let movedEmoji = orgEmojisArray.emojis.remove(at: fromIndexPath.section)
-        orgEmojisArray.emojis.insert(movedEmoji, at: to.section)
+        orgEmojisArray.move(source: fromIndexPath, to: to)
         tableView.reloadData()
     }
+ 
     
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle{
         return UITableViewCell.EditingStyle.none
     }
+    
     
     override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath : IndexPath) -> Bool{
         return false

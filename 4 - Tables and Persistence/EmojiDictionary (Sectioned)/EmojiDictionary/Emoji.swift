@@ -30,6 +30,17 @@ class OrganisedEmojis {
     init(emojis:[[Emoji]]){
         self.emojis = emojis
     }
+    
+    func move(source: IndexPath, to: IndexPath) {
+        guard source.section < self.emojis.count, to.section < self.emojis.count else{
+            return
+        }
+        guard source.row < self.emojis[source.section].count, to.row < self.emojis[to.section].count else{
+            return
+        }
+        let movedEmoji = self.emojis.remove(at: source.row)
+        self.emojis.insert(movedEmoji, at: to.row)
+    }
 }
 
 enum EmojiType: Int, CaseIterable{
