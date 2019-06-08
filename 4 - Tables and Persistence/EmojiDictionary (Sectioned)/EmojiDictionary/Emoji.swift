@@ -38,8 +38,8 @@ class OrganisedEmojis {
         guard source.row < self.emojis[source.section].count, to.row < self.emojis[to.section].count else{
             return
         }
-        let movedEmoji = self.emojis.remove(at: source.row)
-        self.emojis.insert(movedEmoji, at: to.row)
+        let movedEmoji = self.emojis[source.section].remove(at: source.row)
+        self.emojis[to.section].insert(movedEmoji, at: to.row)
     }
 }
 
