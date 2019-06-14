@@ -94,7 +94,7 @@
         <!--Edit-->
         <scene sceneID="33E-BD-eV2">
             <objects>
-                <tableViewController id="m1w-Tq-2Vc" sceneMemberID="viewController">
+                <tableViewController id="m1w-Tq-2Vc" customClass="AddEditEmojiTableViewController" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="8vB-FW-N36">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,6 +114,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="m1w-Tq-2Vc" eventType="editingChanged" id="T7q-MX-McO"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -140,6 +143,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="m1w-Tq-2Vc" eventType="editingChanged" id="IdI-wc-5Yb"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -166,6 +172,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="m1w-Tq-2Vc" eventType="editingChanged" id="HX1-4a-r2M"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -192,6 +201,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="m1w-Tq-2Vc" eventType="editingChanged" id="Lsn-U0-Dwi"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -210,9 +222,28 @@
                             <outlet property="delegate" destination="m1w-Tq-2Vc" id="QDe-Qv-eVK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Edit" id="cNR-wF-a3m"/>
+                    <navigationItem key="navigationItem" title="Edit" id="cNR-wF-a3m">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ro4-uu-RLb">
+                            <connections>
+                                <segue destination="BY6-o1-bvZ" kind="unwind" unwindAction="unwindToEmojiTableViewWithUnwindSegue:" id="95K-op-sMa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="G2h-lj-cTF">
+                            <connections>
+                                <segue destination="BY6-o1-bvZ" kind="unwind" identifier="saveUnwind" unwindAction="unwindToEmojiTableViewWithUnwindSegue:" id="3UT-ec-t74"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="xxV-fh-WkM" id="XYv-Zs-5Rs"/>
+                        <outlet property="nameTextField" destination="Yg7-dY-42n" id="jfz-J3-nWW"/>
+                        <outlet property="saveButton" destination="G2h-lj-cTF" id="6bS-74-eVw"/>
+                        <outlet property="symbolTextField" destination="ZNH-Rs-dUp" id="wUo-NT-9Jd"/>
+                        <outlet property="usageTextField" destination="Ozb-aA-4zP" id="zrE-1o-X4R"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Us0-9Y-eQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BY6-o1-bvZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1970" y="90"/>
         </scene>
